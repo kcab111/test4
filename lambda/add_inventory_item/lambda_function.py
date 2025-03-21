@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table('Inventory')
 
-    # Generate a unique ID Test 2
+    # Generate a unique ID Test 3
     unique_id = str(uuid.uuid4())
 
     # Insert data into DynamoDB
