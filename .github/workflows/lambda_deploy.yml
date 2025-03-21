@@ -4,8 +4,13 @@ on:
   push:
     branches:
       - 'main'
+      - 'dev'
     paths:
       - 'lambda/get_all_inventory_items/lambda_function.py'
+      - 'lambda/get_inventory_items/lambda_function.py'
+      - 'lambda/add_inventory_items/lambda_function.py'
+      - 'lambda/delete_inventory_items/lambda_function.py'
+      - 'lambda/get_location_inventory_items/lambda_function.py'
 
 jobs:
   deploy:
