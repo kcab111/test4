@@ -26,12 +26,12 @@ jobs:
           # list of files that changed across commits
           fetch-depth: 0
 
-      # - name: Super-linter
-      #   uses: super-linter/super-linter@v7.3.0 # x-release-please-version
-      #   env:
-      #     # To report GitHub Actions status checks
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     VALIDATE_CHECKOV: false
-      #     FIX_HTML_PRETTIER: true
-      #     FIX_PYTHON_BLACK: true
-      #     FIX_YAML_PRETTIER: true
+      - name: Super-linter
+        uses: super-linter/super-linter@v7.3.0 # x-release-please-version
+        env:
+          # To report GitHub Actions status checks
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_CHECKOV: false
+          FIX_HTML_PRETTIER: true
+          FIX_PYTHON_BLACK: true
+          FIX_YAML_PRETTIER: true
