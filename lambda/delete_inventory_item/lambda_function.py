@@ -42,7 +42,7 @@ def lambda_handler(event, context):
 
         for item in items:
             sk_value = item["location_id"]  # Replace 'sort_key_name' with actual SK name
-            delete_response = dynamo_client.delete_item(
+            dynamo_client.delete_item(
                 TableName=TABLE_NAME,
                 Key={
                     "id": {"S": key_value},
