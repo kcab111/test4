@@ -1,8 +1,9 @@
 import json
+from decimal import Decimal
 import boto3
 from boto3.dynamodb.conditions import Key
 from botocore.exceptions import ClientError
-from decimal import Decimal
+
 
 # Initialize the DynamoDB client
 dynamo_client = boto3.client('dynamodb')
